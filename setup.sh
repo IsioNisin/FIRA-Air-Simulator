@@ -17,6 +17,8 @@ sudo apt install -y python3-wstool
 sudo apt install -y ros-noetic-ros-control
 sudo apt install -y python3-pip
 pip3 install catkin_pkg
+pip3 install opencv-python
+pip3 install simple-pid
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin init
