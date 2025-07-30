@@ -1,6 +1,17 @@
 # FIRA-Air-Simulator
 FIRA Air Simulator
 
+## Update to Archipelag 2025
+- tested on Ubuntu 20.04.6 LTS
+- download run ```setup.sh``` to install ROS, Gazebo, and all additional packages
+- to start simulator run
+ ```bash
+roscd fira_challenge_env
+./script/run.sh
+```
+-to run flight script run
+``` rosrun fira_challenge_env flight.py```
+
 ## Changelog
 ### Update 1.1.1
 - Fixed the color of the frame for the gates (Changed to magenta)
