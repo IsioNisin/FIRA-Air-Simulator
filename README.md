@@ -8,9 +8,11 @@ FIRA Air Simulator
 chmod +x setup.sh
 ./setup.sh
 ```
+
 to install ROS, Gazebo, and all additional packages
 - to start simulator run
  ```bash
+ source ~/catkin_ws/devel/setup.bash
  roscd fira_challenge_env
 ./script/run.sh
 ```
