@@ -3,14 +3,15 @@ FIRA Air Simulator
 
 ## Update to Archipelag 2025
 - tested on Ubuntu 20.04.6 LTS
-- download run ```bash
+- download and run
+ ```bash
 chmod +x setup.sh
 ./setup.sh
 ```
 to install ROS, Gazebo, and all additional packages
 - to start simulator run
  ```bash
-roscd fira_challenge_env
+ roscd fira_challenge_env
 ./script/run.sh
 ```
 -to run flight script run
