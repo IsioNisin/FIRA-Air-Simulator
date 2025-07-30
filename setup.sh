@@ -26,4 +26,5 @@ git clone https://github.com/IsioNisin/FIRA-Air-Simulator.git
 cd ..
 catkin_make
 source ~/.bashrc
+source ~/catkin_ws/devel/setup.bash
 rosrun fira_challenge_env model_update.py
