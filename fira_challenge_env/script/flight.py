@@ -299,16 +299,16 @@ def main():
 	rospy.sleep(1.0)
 	pub2.publish(Empty())
 	twist = Twist()
-	pid_y = PID(0.011,0,0.000073,setpoint=0)
+	pid_y = PID(0.018,0,0.000083,setpoint=0)
 	pid_z = PID(0.04,0,0.016,setpoint=0)
-	pid_wz = PID(300,0,0,setpoint=0)
+	pid_wz = PID(310,0,0,setpoint=0)
 	pid_y.output_limits = (-5,5)
 	pid_z.output_limits = (-1.5,1.5)
 	pid_wz.output_limits = (-15,15)
 	while(1):
 		vy = pid_y(-dx-30*da-dv*0.2)
 		vz = pid_z(-dy)
-		wz = pid_wz(da-dx*0.00108)
+		wz = pid_wz(da-dx*0.0012)
 		twist.linear.x = 5; twist.linear.y = vy; twist.linear.z =  vz;
 		twist.angular.x = 0; twist.angular.y = 0; twist.angular.z = wz
 		pub.publish(twist)
